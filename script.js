@@ -1,1 +1,1 @@
-console.log("Website is live!");
+console.log("Welcome to Once Upon a Fairytale!");
