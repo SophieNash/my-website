@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-  height: 100px; /* Bigger logo */
+  height: 160px; /* Bigger logo */
   margin-right: 60px;
 }
 
@@ -41,8 +41,8 @@ nav ul li a {
 }
 
 .social-icon {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
 }
 
 .princess-gallery {
