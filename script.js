@@ -1,1 +1,1 @@
-console.log("Welcome to Once Upon a Fairytale!");
+console.log('Once Upon a Fairytale site loaded');
