@@ -59,7 +59,8 @@ nav ul li a {
   object-fit: cover;
 }
 
-.package-list, .character-list {
+.package-list,
+.character-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -68,7 +69,8 @@ nav ul li a {
   margin: auto;
 }
 
-.package, .character {
+.package,
+.character {
   text-align: center;
   border: 1px solid #eee;
   border-radius: 12px;
@@ -76,12 +78,15 @@ nav ul li a {
   background-color: #fafafa;
 }
 
-.package img, .character img {
+.package img,
+.character img {
   width: 100%;
   max-width: 220px;
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row;
@@ -107,7 +112,14 @@ nav ul li a {
   nav ul li {
     margin: 5px 10px;
   }
+
+  .hero-image-container,
+  .home-bio {
+    padding: 0 20px;
+  }
 }
+
+/* Magic list with sparkle bullets */
 .magic-list {
   list-style: none;
   padding-left: 0;
@@ -119,6 +131,7 @@ nav ul li a {
   color: #f09;
 }
 
+/* Sparkle background effect */
 .sparkle-background {
   position: relative;
   overflow: hidden;
@@ -137,6 +150,7 @@ nav ul li a {
   opacity: 0.3;
   animation: sparkleMove 10s linear infinite;
   pointer-events: none;
+  z-index: 0;
 }
 
 @keyframes sparkleMove {
@@ -146,4 +160,14 @@ nav ul li a {
   to {
     transform: translate(30px, 30px);
   }
+}
+
+/* Bio content wrapper to sit above sparkles */
+.bio-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
 }
