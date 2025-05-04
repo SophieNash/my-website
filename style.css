@@ -108,3 +108,14 @@ nav ul li a {
     margin: 5px 10px;
   }
 }
+.magic-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.magic-list li::before {
+  content: "✨";
+  margin-right: 10px;
+  color: #f09;
+}
+
