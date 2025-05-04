@@ -145,10 +145,11 @@ nav ul li a {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(white 1px, transparent 1px);
+  background: radial-gradient(#ffffff 1px, transparent 1px),
+              radial-gradient(#ffd1f7 1px, transparent 1px);
   background-size: 30px 30px;
-  opacity: 0.3;
-  animation: sparkleMove 10s linear infinite;
+  opacity: 0.6;
+  animation: sparkleMove 15s linear infinite;
   pointer-events: none;
   z-index: 0;
 }
