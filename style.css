@@ -135,7 +135,7 @@ nav ul li a {
 .sparkle-background {
   position: relative;
   overflow: hidden;
-  background-color: #fef4ff;
+  background-color: #fef4ff; /* Light pink background */
 }
 
 .sparkle-background::before {
@@ -145,21 +145,24 @@ nav ul li a {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(#ffffff 1px, transparent 1px),
-              radial-gradient(#ffd1f7 1px, transparent 1px);
+  background: radial-gradient(#ffffff 1px, transparent 1px), /* White sparkle */
+              radial-gradient(#ffd1f7 1px, transparent 1px); /* Pink sparkle */
   background-size: 30px 30px;
-  opacity: 0.6;
+  opacity: 0.7;
   animation: sparkleMove 15s linear infinite;
   pointer-events: none;
   z-index: 0;
 }
 
 @keyframes sparkleMove {
-  from {
+  0% {
     transform: translate(0, 0);
   }
-  to {
+  50% {
     transform: translate(30px, 30px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
