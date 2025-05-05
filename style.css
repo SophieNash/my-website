@@ -175,3 +175,24 @@ nav ul li a {
   margin: auto;
   text-align: center;
 }
+
+.contact-wrapper {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-links p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.contact-links a {
+  color: #cc3399;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
