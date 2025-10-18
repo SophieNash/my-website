@@ -53,6 +53,7 @@ nav ul li a {
 }
 
 .hero-image {
+  display: block
   width: 100%;
   height: auto;
   object-fit: cover;
